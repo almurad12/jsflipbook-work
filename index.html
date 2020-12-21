@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src="turn.min.js"></script> -->
+    <script src="turn.min.js"></script>
+    <script src="turn.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="book">
+       <div style="background-image:url(img/01.jpg)"><div class="page">page1</div></div>
+       <div style="background-image:url(img/02.jpg)"><div class="page">page2</div></div>
+        <!-- <div style="background-image:url(img/03.jpg)">page3</div>
+        <div style="background-image:url(img/04.jpg)">page4</div> -->
+        <div style="background-image:url(img/03.jpg)"><div class="page">page3</div></div>
+       <div style="background-image:url(img/04.jpg)"><div class="page">page4</div></div>
+        
+         
+    </div>
+    <div id="page">page number</div>
+    <script>
+        
+        // 
+        // $('#book').turn('page');
+        // $(document).ready(function(){
+         
+        //     $('#book').turn({gradients: true, acceleration: true});
+           
+        //     // 
+           
+        // });
+        
+        $(document).ready(function(){
+       
+         $('#book').turn({gradients: true, acceleration: true});
+        
+        
+         $("#book").turn("display", "double");
+        // alert("The current display is: " + $("#book").turn("display"));
+        $("#book").turn("previous");
+         // 
+        
+        
+     });
+     </script>
+</body>
+</html>

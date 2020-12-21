@@ -1,0 +1,27 @@
+body{
+    overflow: hidden;
+    background: white;
+}
+#book{
+    margin:  5% auto;
+    width: 1000px;
+    height: 500px;
+}
+#book .turn-page{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#book div{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center ;
+}
+#book .page{
+    background: red;
+    width: 8%;
+    height: 5%;
+    color: white;
+    
+
+}
